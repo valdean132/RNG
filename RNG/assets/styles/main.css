@@ -1,0 +1,337 @@
+/* ! Main ! */
+body > main{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*? Header ?*/
+main header{
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main header h1{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+/*? Main ?*/
+main > main{
+    width: 100%;
+    height: calc(100% - 80px);
+
+    margin-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/***/
+main > main .contain-number{
+    width: 96%;
+    max-width: 750px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > main .contain-number .title-number h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+main > main .contain-number .contain-number-wrapper{
+    width: auto;
+    height: 100%;
+    max-height: 300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+}
+main > main .contain-number .contain-number-wrapper .single-number{
+    min-width: 60px;
+    max-width: 568px;
+    height: 60px;
+
+    position: relative;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--color-white);
+    border-radius: 15px;
+
+    padding: 0 8px;
+    margin: 15px;
+
+    cursor: pointer;
+}
+main > main .contain-number .contain-number-wrapper .single-number.preview{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+main > main .contain-number .contain-number-wrapper .single-number:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+main > main .contain-number .contain-number-wrapper .single-number .remover-number{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    background-color: var(--color-black);
+    
+    border: 2px solid var(--color-white);
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    color: var(--color-white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+main > main .contain-number .contain-number-wrapper .single-number:hover .remover-number{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+
+    top: -15px;
+    right: -15px;
+}
+main > main .contain-number .contain-number-wrapper .single-number .remover-number:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+main > main .contain-number .contain-number-wrapper .single-number p{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+main > main .contain-number .contain-number-wrapper .no-result{
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    font-size: 1.1rem;
+}
+main > main .contain-number .contain-number-wrapper.remove .no-result{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+
+/***/
+main > main .btns-inputs{
+    width: 96%;
+    max-width: 750px;
+
+    padding: 0 10px;
+    margin-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+main > main .btns-inputs .inputs-values{
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main > main .btns-inputs .inputs-values .inputs-single{
+    width: 100%;
+    max-width: 350px;
+
+    position: relative;
+
+}
+main > main .btns-inputs .inputs-values .inputs-single.inputs-single{
+    margin-bottom: 25px;
+}
+main > main .btns-inputs .inputs-values .inputs-single label{
+    position: absolute;
+    top: -11px;
+    left: 15px;
+
+    font-size: .9rem;
+
+    background-color: var(--color-black);
+
+    border: 1px solid var(--color-white);
+    border-radius: 8px;
+
+    padding: 0 8px;
+
+    cursor: text;
+}
+main > main .btns-inputs .inputs-values .inputs-single input{
+    width: 100%;
+    height: 50px;
+
+    background-color: transparent;
+
+    padding: 0 15px;
+
+    color: var(--color-white);
+
+    border: 2px solid var(--color-white);
+    border-radius: 10px;
+}
+main > main .btns-inputs .inputs-values .inputs-single.error label,
+main > main .btns-inputs .inputs-values .inputs-single.error input{
+    border-color: var(--alert-03-error);
+    color: var(--alert-03-error);
+}
+main > main .btns-inputs .inputs-values .inputs-single.disabled label{
+    cursor: no-drop;
+}
+main > main .btns-inputs .inputs-values .inputs-single.disabled input{
+    background-color: var(--color-grey-p-2);
+
+    cursor: no-drop;
+}
+
+main > main .btns-inputs .inputs-values .inputs-single input:focus,
+main > main .btns-inputs .inputs-values .inputs-single input:focus ~ label{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+main > main .btns-inputs .inputs-values .inputs-single input::placeholder{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+main > main .btns-inputs .inputs-values .inputs-single input:focus::placeholder{
+    opacity: 0;
+}
+
+
+main > main .btns-inputs .btns-generation{
+    width: 100%;
+    max-width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main > main .btns-inputs .btns-generation button{
+    background-color: transparent;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-white);
+
+    padding: 0 15px;
+
+    border: 2px solid var(--color-white);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+main > main .btns-inputs .btns-generation button:hover,
+main > main .btns-inputs .btns-generation button.active:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+main > main .btns-inputs .btns-generation .add-new-number{
+    margin-bottom: 10px;
+}
+main > main .btns-inputs .btns-generation .remove-all-number{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+main > main .btns-inputs .btns-generation .remove-all-number.active{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+main > main .btns-inputs .btns-generation button:disabled{
+    background-color: var(--color-grey-p-2);
+
+    cursor: no-drop;
+}
+main > main .btns-inputs .btns-generation button:disabled:hover{
+    color: var(--color-white);
+}
+
+/***/
+main > main .atalhos{
+    width: 96%;
+    max-width: 750px;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main > main .atalhos h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-white);
+
+    margin-bottom: 10px;
+
+}
+main > main .atalhos .contain-atalhos{
+    font-size: .9rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-grey-p-7);
+}
+main > main .atalhos .contain-atalhos p strong{
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+/***/
+main > main .creditos{
+    margin-bottom: 50px;
+}
+main > main .creditos p{
+    font-size: .9rem;
+    text-align: center;
+    color: var(--color-grey-p-7);
+}
+main > main .creditos a{
+    font-weight: 700;
+    color: var(--color-white);
+}
+main > main .creditos a:hover{
+    text-decoration: underline;
+}

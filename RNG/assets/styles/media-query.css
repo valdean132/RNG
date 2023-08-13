@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+    main > main .contain-number .contain-number-wrapper .single-number .remover-number{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+
+        top: -15px;
+        right: -15px;
+    }
+
+    main > main .atalhos{
+        display: none;
+    }
+}
+@media screen and (max-width: 610px){
+    :root{
+        /*? ** Font ** ?*/
+        font-size: 90%;
+    }
+
+    main > main .contain-number{
+        margin-top: 0;
+        /* margin-bottom: 0; */
+    }
+    main > main .btns-inputs{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-height: 800px) {
+    main > main .btns-inputs{
+        margin-bottom: 20px;
+    }
+    main > main .atalhos{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-height: 700px) {
+    main > main .btns-inputs{
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-height: 600px) {
+    main > main .btns-inputs{
+        margin-bottom: 20px;
+    }
+}

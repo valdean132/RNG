@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de números aleatorios</title>
+
+    <!-- Importing the favicon. -->
+    <link rel="sortcut icon" href="/favicon.png" type="image/x-icon" />
+
+    <!-- CEO -->
+    <meta name="description" content="Sou apaixonado por inovação e tecnologia, e é com grande entusiasmo esse novo site de gerador de números. Meu site oferece uma maneira simples e eficiente de gerar números aleatórios para uma variedade de finalidades, desde sorteios e jogos até análises estatísticas. Com recursos avançados e um foco implacável na usabilidade, estamos determinados a fornecer aos nossos usuários a melhor experiência possível ao utilizar números aleatórios.">
+
+    <meta name="keywords" content="Gerador de Números, Aleatório, Sorteio, Jogos, Estatísticas, Tecnologia, Inovação, Usabilidade, Eficiência">
+    <meta name="author" content="Valdean Palmeira Souza">
+
+    <!-- Importing the css files. -->
+    <!-- Style Setting -->
+    <link rel="stylesheet" href="assets/styles/reset.css"> <!-- Reset Page -->
+    <link rel="stylesheet" href="assets/styles/config.css"> <!-- Config Styles -->
+
+    <!-- Vendor Style -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css"><!-- Bootstrap Icones -->
+    <link rel="stylesheet" href="assets/vendor/pace-1.2.4/pace-theme-default.css"><!-- Pace Style -->
+    <link rel="stylesheet" href="assets/vendor/toastify/toastify.min.css"><!-- Toastify Styles -->
+
+    <!-- Style Pages -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <!-- Media Query -->
+    <link rel="stylesheet" href="assets/styles/media-query.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Gere seus números aleatórios</h1>
+        </header>
+        <main>
+
+            <div class="contain-number">
+                <div class="title-number">
+                    <h2>Números gerados</h2>
+                </div>
+                <div class="contain-number-wrapper remove scrollbar-y">
+                    
+                </div>
+            </div>
+
+            <div class="btns-inputs">
+                <div class="inputs-values">
+                    <div class="input-start inputs-single">
+                        <input type="number" class="user-select-none transition" id="start-number" required placeholder="Informe o primeiro número">
+                        <label for="start-number" class="user-select-none transition">Primeiro número</label>
+                    </div>
+                    <div class="input-end inputs-single">
+                        <input type="number" class="user-select-none transition" id="end-number" required placeholder="Informe o último número">
+                        <label for="end-number" class="user-select-none transition">Último número</label>
+                    </div>
+                </div>
+                <div class="btns-generation">
+                    <button class="add-new-number transition user-select-none" title="Gerar Novo número">Gerar número</button>
+                    <button class="remove-all-number transition user-select-none" title="Apagar todos os números">Resetar números gerados</button>
+                </div>
+            </div>
+            <div class="atalhos">
+                <h3>Atalhos disponíveis</h3>
+                <div class="contain-atalhos user-select-none">
+                    <p><strong>Enter</strong>: Gerar novo número;</p>
+                    <p><strong>Esc</strong>: Detelar todos os números gerados;</p>
+                    <p><strong>Backspace</strong>: Deletar último número gerado.</p>
+                </div>
+            </div>
+            <div class="creditos user-select-none">
+                <p>Desenvolvido por <a href="https://valdeansouza.com" target="_blank">Valdean Souza</a>.</p>
+                <p>&copy; 2023. Todos os direitos reservados.</p>
+            </div>
+        </main>
+    </main>
+
+
+    <!-- Importing the css files. -->
+    <!-- Vendor Script -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script><!-- Importando a biblioteca jQuery -->
+    <script src="assets/vendor/jquery/jquery-ui.min.js"></script><!-- Importando a biblioteca jQuery Ui -->
+    <script src="assets/vendor/pace-1.2.4/pace.min.js"></script><!-- Importando a Plugin Pace -->
+    <script src="assets/vendor/toastify/toastify.min.js"></script><!-- Importando a Plugin Toastify - Para mostra os avisos na tela -->
+    
+    <!-- Script Setting -->
+    <script src="assets/scripts/notification.js"></script><!-- Notificações -->
+    <script src="assets/scripts/animations.js"></script><!-- Animações -->
+    <script src="assets/scripts/elements.js"></script><!-- Animações -->
+
+    <!-- Scripts Logic -->
+    <script src="assets/scripts/random-number-logic.js"></script><!-- Logica para gerar números aléatorios -->
+
+</body>
+</html>
