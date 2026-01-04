@@ -3,7 +3,7 @@
 Hoje gostaria de mostrar esse pequeno projeto desenvolvido por mim. Ele tem o intuito de pralógica de programação e criação de interface. Disposto de alguns recursos, lhes apresento:
 
 
-![Logo](https://rng.valdeansouza.com/favicon.png)
+![Logo](https://valdean132.github.io/RNG/RNG/favicon.png)
 
 
 # RNG - Random Number Generator
